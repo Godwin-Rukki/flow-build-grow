@@ -1,10 +1,10 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, Sparkles } from "lucide-react";
 import { FadeUp } from "@/components/effects/FadeUp";
-import { SERVICES, type ServiceSlug } from "@/data/site";
+import { SERVICES, type Service, type ServiceSlug } from "@/data/site";
 
 export const Route = createFileRoute("/services/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { service: Service } => {
     const service = SERVICES.find((s) => s.slug === (params.slug as ServiceSlug));
     if (!service) throw notFound();
     return { service };
