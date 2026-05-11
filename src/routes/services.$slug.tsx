@@ -38,7 +38,7 @@ const accentMap = {
 } as const;
 
 function ServiceDetail() {
-  const { service } = Route.useLoaderData();
+  const { service } = Route.useLoaderData() as { service: Service };
   const a = accentMap[service.accent];
 
   return (
