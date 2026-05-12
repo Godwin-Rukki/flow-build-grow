@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { FadeUp } from "@/components/effects/FadeUp";
+import { SectionDecor } from "@/components/effects/SectionDecor";
 import { CERTIFICATIONS, EXPERIENCE, SITE, SKILLS } from "@/data/site";
 
 export const Route = createFileRoute("/resume")({
@@ -32,8 +33,9 @@ const dotColors = {
 function ResumePage() {
   return (
     <>
-      <section className="bg-background pt-20 pb-12 md:pt-28">
-        <div className="mx-auto max-w-5xl px-6">
+      <section className="relative overflow-hidden bg-background pt-20 pb-12 md:pt-28">
+        <SectionDecor variant="constellation" />
+        <div className="relative mx-auto max-w-5xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-primary">My Journey</span>
             <h1 className="mt-3 font-display text-5xl md:text-6xl font-bold tracking-tight">
@@ -54,8 +56,9 @@ function ResumePage() {
       </section>
 
       {/* Timeline */}
-      <section className="bg-background py-16 md:py-20">
-        <div className="mx-auto max-w-4xl px-6">
+      <section className="relative overflow-hidden bg-background py-16 md:py-20">
+        <SectionDecor variant="grid-dots" />
+        <div className="relative mx-auto max-w-4xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-muted-foreground">Experience</span>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">Where I've worked.</h2>
@@ -96,8 +99,9 @@ function ResumePage() {
       </section>
 
       {/* Certifications */}
-      <section className="bg-primary-surface py-16 md:py-20">
-        <div className="mx-auto max-w-4xl px-6">
+      <section className="relative overflow-hidden bg-primary-surface py-16 md:py-20">
+        <SectionDecor variant="flow" />
+        <div className="relative mx-auto max-w-4xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-primary">Certifications</span>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">Verified work.</h2>
@@ -115,8 +119,9 @@ function ResumePage() {
       </section>
 
       {/* Skills */}
-      <section className="bg-background py-16 md:py-24">
-        <div className="mx-auto max-w-5xl px-6 space-y-12">
+      <section className="relative overflow-hidden bg-background py-16 md:py-24">
+        <SectionDecor variant="bubbles" />
+        <div className="relative mx-auto max-w-5xl px-6 space-y-12">
           <FadeUp>
             <span className="label-eyebrow text-muted-foreground">Skills & Tools</span>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">The stack.</h2>

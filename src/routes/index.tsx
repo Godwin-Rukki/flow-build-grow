@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote, Sparkles } from "lucide-react";
 import { FadeUp } from "@/components/effects/FadeUp";
 import { FloatingBlob } from "@/components/effects/FloatingBlob";
+import { SectionDecor } from "@/components/effects/SectionDecor";
 import { Counter } from "@/components/effects/Counter";
 import { motion } from "framer-motion";
 import { METRICS, PAINS, SERVICES, TESTIMONIALS } from "@/data/site";
@@ -144,8 +145,9 @@ function WhatIDo() {
 /* ---------- Section 3: Pains ---------- */
 function Pains() {
   return (
-    <section className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative overflow-hidden bg-background py-24 md:py-32">
+      <SectionDecor variant="squares" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <FadeUp>
           <span className="label-eyebrow text-peach">The Problem</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold max-w-3xl">
@@ -170,8 +172,9 @@ function Pains() {
 /* ---------- Section 4: Aha ---------- */
 function Aha() {
   return (
-    <section className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-4xl px-6 text-center">
+    <section className="relative overflow-hidden bg-background py-24 md:py-32">
+      <SectionDecor variant="constellation" />
+      <div className="relative mx-auto max-w-4xl px-6 text-center">
         <FadeUp>
           <div className="h-px w-24 mx-auto bg-gold mb-10" />
           <h2 className="font-display text-4xl md:text-6xl font-bold leading-tight">
@@ -199,8 +202,9 @@ function ServicesPreview() {
   } as const;
 
   return (
-    <section className="bg-primary-surface py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative overflow-hidden bg-primary-surface py-24 md:py-32">
+      <SectionDecor variant="flow" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <FadeUp>
           <span className="label-eyebrow text-primary">What I Do</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold max-w-3xl">
@@ -239,8 +243,9 @@ function ServicesPreview() {
 /* ---------- Section 6: About ---------- */
 function About() {
   return (
-    <section className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6 grid gap-12 md:grid-cols-[260px,1fr] items-start">
+    <section className="relative overflow-hidden bg-background py-24 md:py-32">
+      <SectionDecor variant="grid-dots" />
+      <div className="relative mx-auto max-w-6xl px-6 grid gap-12 md:grid-cols-[260px,1fr] items-start">
         <FadeUp>
           <div className="relative w-56 h-56 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-card-border bg-primary-surface flex items-center justify-center">
             <span className="font-display text-6xl text-primary">G</span>
@@ -286,8 +291,9 @@ function About() {
 /* ---------- Section 7: Results ---------- */
 function Results() {
   return (
-    <section className="bg-primary-surface py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative overflow-hidden bg-primary-surface py-24 md:py-32">
+      <SectionDecor variant="constellation" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <FadeUp>
           <span className="label-eyebrow text-primary">Results</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold max-w-3xl">
@@ -315,8 +321,9 @@ function Results() {
 /* ---------- Section 8: Testimonials ---------- */
 function Testimonials() {
   return (
-    <section className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative overflow-hidden bg-background py-24 md:py-32">
+      <SectionDecor variant="bubbles" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <FadeUp>
           <span className="label-eyebrow text-peach">Trust</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold max-w-3xl">

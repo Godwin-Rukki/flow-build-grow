@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { FadeUp } from "@/components/effects/FadeUp";
+import { SectionDecor } from "@/components/effects/SectionDecor";
 import { SERVICES } from "@/data/site";
 
 export const Route = createFileRoute("/services")({
@@ -38,8 +39,9 @@ const accentMap = {
 function ServicesPage() {
   return (
     <>
-      <section className="relative bg-background pt-20 pb-12 md:pt-28 md:pb-16">
-        <div className="mx-auto max-w-6xl px-6">
+      <section className="relative overflow-hidden bg-background pt-20 pb-12 md:pt-28 md:pb-16">
+        <SectionDecor variant="flow" />
+        <div className="relative mx-auto max-w-6xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-primary">What I Do</span>
             <h1 className="mt-3 font-display text-5xl md:text-6xl font-bold tracking-tight">
@@ -52,8 +54,9 @@ function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-background pb-24">
-        <div className="mx-auto max-w-6xl px-6 grid gap-6 md:grid-cols-2">
+      <section className="relative overflow-hidden bg-background pb-24">
+        <SectionDecor variant="squares" />
+        <div className="relative mx-auto max-w-6xl px-6 grid gap-6 md:grid-cols-2">
           {SERVICES.map((s, i) => {
             const a = accentMap[s.accent];
             return (
