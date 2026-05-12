@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, Sparkles } from "lucide-react";
 import { FadeUp } from "@/components/effects/FadeUp";
+import { SectionDecor } from "@/components/effects/SectionDecor";
 import { SERVICES, type Service, type ServiceSlug } from "@/data/site";
 
 export const Route = createFileRoute("/services_/$slug")({
@@ -44,8 +45,9 @@ function ServiceDetail() {
   return (
     <>
       {/* Hero */}
-      <section className={`${a.bg} pt-16 pb-20 md:pt-24 md:pb-28`}>
-        <div className="mx-auto max-w-5xl px-6">
+      <section className={`relative overflow-hidden ${a.bg} pt-16 pb-20 md:pt-24 md:pb-28`}>
+        <SectionDecor variant="bubbles" />
+        <div className="relative mx-auto max-w-5xl px-6">
           <FadeUp>
             <Link
               to="/services"
@@ -70,8 +72,9 @@ function ServiceDetail() {
       </section>
 
       {/* What's included */}
-      <section className="bg-background py-20 md:py-24">
-        <div className="mx-auto max-w-5xl px-6 grid gap-12 md:grid-cols-2">
+      <section className="relative overflow-hidden bg-background py-20 md:py-24">
+        <SectionDecor variant="grid-dots" />
+        <div className="relative mx-auto max-w-5xl px-6 grid gap-12 md:grid-cols-2">
           <FadeUp>
             <span className="label-eyebrow text-muted-foreground">What's included</span>
             <h2 className="mt-3 font-display text-3xl font-bold">Everything that goes in.</h2>
@@ -92,8 +95,9 @@ function ServiceDetail() {
       </section>
 
       {/* How I do it */}
-      <section className="bg-primary-surface py-20 md:py-24">
-        <div className="mx-auto max-w-5xl px-6">
+      <section className="relative overflow-hidden bg-primary-surface py-20 md:py-24">
+        <SectionDecor variant="flow" />
+        <div className="relative mx-auto max-w-5xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-primary">How I do it</span>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">The process.</h2>
@@ -113,8 +117,9 @@ function ServiceDetail() {
       </section>
 
       {/* Tools */}
-      <section className="bg-background py-20 md:py-24">
-        <div className="mx-auto max-w-5xl px-6">
+      <section className="relative overflow-hidden bg-background py-20 md:py-24">
+        <SectionDecor variant="constellation" />
+        <div className="relative mx-auto max-w-5xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-muted-foreground">Tools I use</span>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">My stack for this.</h2>
