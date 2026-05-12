@@ -191,7 +191,7 @@ function ContactPage() {
             </a>
           </FadeUp>
         </div>
-        <p className="mt-10 text-center text-sm text-muted-foreground">
+        <p className="relative mt-10 text-center text-sm text-muted-foreground">
           I respond to every message within 24 hours.
         </p>
       </section>
