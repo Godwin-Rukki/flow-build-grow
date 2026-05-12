@@ -6,6 +6,7 @@ import { z } from "zod";
 import { Calendar, Linkedin, Mail, Send } from "lucide-react";
 import { toast } from "sonner";
 import { FadeUp } from "@/components/effects/FadeUp";
+import { SectionDecor } from "@/components/effects/SectionDecor";
 import { SITE } from "@/data/site";
 
 export const Route = createFileRoute("/contact")({
@@ -75,8 +76,9 @@ function ContactPage() {
 
   return (
     <>
-      <section className="bg-background pt-20 pb-12 md:pt-28">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative overflow-hidden bg-background pt-20 pb-12 md:pt-28">
+        <SectionDecor variant="bubbles" />
+        <div className="relative mx-auto max-w-3xl px-6">
           <FadeUp>
             <span className="label-eyebrow text-peach">Contact</span>
             <h1 className="mt-3 font-display text-5xl md:text-6xl font-bold tracking-tight">
@@ -90,8 +92,9 @@ function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-background pb-16">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative overflow-hidden bg-background pb-16">
+        <SectionDecor variant="squares" />
+        <div className="relative mx-auto max-w-3xl px-6">
           <FadeUp delay={0.1}>
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -144,8 +147,9 @@ function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-primary-surface py-16">
-        <div className="mx-auto max-w-3xl px-6 grid gap-4 md:grid-cols-3">
+      <section className="relative overflow-hidden bg-primary-surface py-16">
+        <SectionDecor variant="flow" />
+        <div className="relative mx-auto max-w-3xl px-6 grid gap-4 md:grid-cols-3">
           <FadeUp>
             <a
               href={SITE.calendly}
