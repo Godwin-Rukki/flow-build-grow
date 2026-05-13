@@ -258,24 +258,33 @@ function About() {
         <FadeUp delay={0.1}>
           <span className="label-eyebrow text-primary">About</span>
           <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold leading-tight">
-            I'm Godwin. I don't just run campaigns — I build systems.
+            I don't just run campaigns — I build engines.
           </h2>
-          <p className="mt-5 text-muted-foreground text-lg">
-            [Placeholder bio paragraph — replace with real content. A short, warm
-            paragraph about how Godwin works, who he helps, and what makes him different.]
-          </p>
-          <ul className="mt-6 space-y-3">
-            {[
-              "Started as an Executive Assistant — I understand operations.",
-              "Certified in data analytics — I make decisions with numbers.",
-              "I don't silo — I connect your traffic, funnel, and automation into one engine.",
-            ].map((b, i) => (
-              <li key={i} className="flex gap-3 items-start">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-peach shrink-0" />
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="mt-5 space-y-4 text-muted-foreground text-lg">
+            <p>
+              My journey didn't start with algorithms or ad spend; it started in the trenches.
+              As a former Executive Assistant, I lived the reality of manual chaos — the missed
+              leads, the messy spreadsheets, and the burnout that comes from trying to scale a
+              business with manual labor. I didn't just see the "pain" of inefficient operations;
+              I felt it.
+            </p>
+            <p>
+              That experience changed how I look at growth. I realized that a business doesn't
+              need more "to-do" lists; it needs a system.
+            </p>
+            <p>
+              Today, I combine that operational empathy with my background in Data Analytics to
+              build high-performance Growth Engines. I don't believe in silos. A great ad
+              campaign is useless without a funnel that converts, and a funnel is a waste of
+              time without the backend automation to catch the lead.
+            </p>
+            <p className="font-display text-foreground text-xl">I bridge those gaps.</p>
+            <p>
+              By connecting your traffic, your funnel, and your automation into one unified
+              machine, I ensure that your technology finally works as hard as you do. I'm not
+              here to just "manage" your business — I'm here to help you engineer its growth.
+            </p>
+          </div>
           <Link
             to="/resume"
             className="mt-7 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.03]"
