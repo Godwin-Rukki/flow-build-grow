@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Godwin Idiovo",
-  email: "hello@godwinidiovo.com",
+  email: "godwin@godwinidiovo.com",
   domain: "godwinidiovo.com",
   linkedin: "https://www.linkedin.com/in/REPLACE_ME",
   calendly: "https://calendly.com/REPLACE_ME/30min",
