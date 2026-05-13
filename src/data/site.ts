@@ -2,7 +2,7 @@ export const SITE = {
   name: "Godwin Idiovo",
   email: "godwin@godwinidiovo.com",
   domain: "godwinidiovo.com",
-  linkedin: "https://www.linkedin.com/in/REPLACE_ME",
+  linkedin: "https://www.linkedin.com/in/oghenerukevwegodwinidiovo/",
   calendly: "https://calendly.com/REPLACE_ME/30min",
   formspreeId: "REPLACE_ME",
   cvUrl: "/cv-placeholder.pdf",
