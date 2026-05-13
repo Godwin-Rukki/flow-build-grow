@@ -147,19 +147,19 @@ export const METRICS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Working with Godwin has been an absolute game-changer. I needed someone I could fully trust to take ownership of the backend and Godwin delivered beyond expectations. He stepped in seamlessly, organized systems, managed communication flows, and helped simplify our digital processes. He's proactive, professional, and brings a calm confidence to everything he does.",
+      "Working with Godwin has been an absolute game-changer. He stepped in seamlessly, took ownership of the backend, organized our systems, and simplified our digital processes. He's proactive, professional, and brings a calm confidence to everything he does.",
     name: "Bonita Grobbelaar",
     title: "CEO, Scale To Impact",
   },
   {
     quote:
-      "Godwin was a great support to my business during a very busy season. He assisted with lead generation, email outreach, and other key VA tasks that helped me stay organized and focused on high-priority work. What stood out was his reliability, attention to detail, and ability to take initiative without constant direction. He understood what needed to be done, communicated clearly, and got things done efficiently.",
+      "Godwin was a great support during a very busy season — leading lead generation, email outreach, and key VA tasks that kept me focused on high-priority work. What stood out was his reliability, attention to detail, and ability to take initiative without constant direction. He communicated clearly and got things done efficiently.",
     name: "Matt Moran",
     title: "Founder & CEO, Matt Moran Coaching",
   },
   {
     quote:
-      "Godwin has been an invaluable part of our team at Little Cell of Mine Foundation. As Volunteer/Programs Coordinator, he has helped us build structure into our programs, streamline volunteer recruitment, and improve how we track and manage ongoing projects. From automating application processes to supporting grant writing and project planning, Godwin consistently brings clarity, dedication, and strategic thinking to the table. His lived experience and passion for sickle cell advocacy make his contributions even more meaningful.",
+      "Godwin has been an invaluable part of our team. He built structure into our programs, streamlined volunteer recruitment, and improved how we track and manage ongoing projects. From automating applications to supporting grant writing, he consistently brings clarity, dedication, and strategic thinking to the table.",
     name: "Dr. Ivie Enebeli",
     title: "Founder, Little Cell Of Mine Foundation",
   },
