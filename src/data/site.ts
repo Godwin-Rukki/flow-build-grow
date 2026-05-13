@@ -3,7 +3,7 @@ export const SITE = {
   email: "godwin@godwinidiovo.com",
   domain: "godwinidiovo.com",
   linkedin: "https://www.linkedin.com/in/oghenerukevwegodwinidiovo/",
-  calendly: "https://calendly.com/REPLACE_ME/30min",
+  calendly: "https://calendly.com/idiovorukky/theguyva",
   formspreeId: "REPLACE_ME",
   cvUrl: "/cv-placeholder.pdf",
 };
