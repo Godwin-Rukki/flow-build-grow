@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Full-stack growth execution for businesses ready to scale without chaos. Traffic, funnels, and backend automation | built into one engine.",
+          "Full-stack growth execution for businesses ready to scale without chaos. Traffic, funnels, and backend automation, built into one engine.",
       },
       { name: "author", content: "Godwin Idiovo" },
       { property: "og:title", content: "Godwin Idiovo | Growth Systems Built to Scale" },
       {
         property: "og:description",
         content:
-          "Media buying, conversion funnels, and backend automation | built into one engine.",
+          "Media buying, conversion funnels, and backend automation, built into one engine.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

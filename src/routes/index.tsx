@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Media buying, conversion funnels, and backend automation | connected into one engine.",
+          "Media buying, conversion funnels, and backend automation, connected into one engine.",
       },
     ],
   }),

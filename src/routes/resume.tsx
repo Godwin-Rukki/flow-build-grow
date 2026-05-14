@@ -12,12 +12,12 @@ export const Route = createFileRoute("/resume")({
       {
         name: "description",
         content:
-          "From operations to automation | Godwin's journey through marketing, ops, and technical work.",
+          "From operations to automation. Godwin's journey through marketing, ops, and technical work.",
       },
       { property: "og:title", content: "My Journey | Godwin Idiovo" },
       {
         property: "og:description",
-        content: "From operations to automation | here's how I got here.",
+        content: "From operations to automation. Here's how I got here.",
       },
     ],
   }),
