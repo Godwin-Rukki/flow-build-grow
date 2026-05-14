@@ -11,7 +11,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Three systems. One engine. Media buying, conversion funnels, backend automation, and email nurture | built for growth.",
+          "Three systems. One engine. Media buying, conversion funnels, backend automation, and email nurture, built for growth.",
       },
       { property: "og:title", content: "What I Do | Godwin Idiovo" },
       {
@@ -48,7 +48,7 @@ function ServicesPage() {
               Three systems. One engine.
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
-              Built for growth | without the chaos.
+              Built for growth, without the chaos.
             </p>
           </FadeUp>
         </div>
