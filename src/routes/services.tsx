@@ -7,13 +7,13 @@ import { SERVICES } from "@/data/site";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Godwin Idiovo" },
+      { title: "Services | Godwin Idiovo" },
       {
         name: "description",
         content:
-          "Three systems. One engine. Media buying, conversion funnels, backend automation, and email nurture — built for growth.",
+          "Three systems. One engine. Media buying, conversion funnels, backend automation, and email nurture, built for growth.",
       },
-      { property: "og:title", content: "What I Do — Godwin Idiovo" },
+      { property: "og:title", content: "What I Do | Godwin Idiovo" },
       {
         property: "og:description",
         content:
@@ -48,7 +48,7 @@ function ServicesPage() {
               Three systems. One engine.
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
-              Built for growth — without the chaos.
+              Built for growth, without the chaos.
             </p>
           </FadeUp>
         </div>

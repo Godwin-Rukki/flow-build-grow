@@ -12,13 +12,13 @@ import { SITE } from "@/data/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Godwin Idiovo" },
+      { title: "Contact | Godwin Idiovo" },
       {
         name: "description",
         content:
           "Tell Godwin about your business and where you're stuck. He responds within 24 hours.",
       },
-      { property: "og:title", content: "Let's Build Something — Godwin Idiovo" },
+      { property: "og:title", content: "Let's Build Something | Godwin Idiovo" },
       {
         property: "og:description",
         content: "Tell me about your business. I'll tell you exactly how I can help.",
@@ -53,7 +53,7 @@ function ContactPage() {
     setSubmitting(true);
     try {
       if (SITE.formspreeId === "REPLACE_ME") {
-        // Placeholder — pretend success so the UI flow works in preview.
+        // Placeholder | pretend success so the UI flow works in preview.
         await new Promise((r) => setTimeout(r, 700));
         toast.success("Message captured (placeholder). Add your Formspree ID to enable real sending.");
         reset();

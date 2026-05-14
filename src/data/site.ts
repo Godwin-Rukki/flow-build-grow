@@ -34,9 +34,9 @@ export const SERVICES: Service[] = [
     tagline: "I get high-quality traffic to the front door.",
     accent: "peach",
     short:
-      "Paid traffic that actually converts — research, creative strategy, and relentless optimization.",
+      "Paid traffic that actually converts. Research, creative strategy, and relentless optimization.",
     description:
-      "I run paid acquisition campaigns built around your real economics — not vanity clicks. From audience research to creative angles to daily optimization, I treat every dollar like it's mine.",
+      "I run paid acquisition campaigns built around your real economics, not vanity clicks. From audience research to creative angles to daily optimization, I treat every dollar like it's mine.",
     includes: [
       "Audience and competitor research",
       "Campaign architecture and setup",
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
     tagline: "I build the path that turns strangers into leads.",
     accent: "primary",
     short:
-      "End-to-end funnel design — from the click to the booked call — engineered to convert.",
+      "End-to-end funnel design, from the click to the booked call, engineered to convert.",
     description:
       "A great ad means nothing if the page after it leaks. I design and build the entire path: landing pages, lead magnets, qualifiers, and thank-you flows that move people forward.",
     includes: [
@@ -81,12 +81,12 @@ export const SERVICES: Service[] = [
   {
     slug: "backend-automation",
     title: "Backend Automation",
-    tagline: "I build the brain that follows up — so no revenue is lost.",
+    tagline: "I build the brain that follows up, so no revenue is lost.",
     accent: "gold",
     short:
       "CRM, workflows, and integrations that turn your business into a system that runs itself.",
     description:
-      "Most leads die in the gap between getting captured and getting called. I build the automations — CRM, workflows, integrations — that make sure every lead gets the right touch at the right moment.",
+      "Most leads die in the gap between getting captured and getting called. I build the automations (CRM, workflows, integrations) that make sure every lead gets the right touch at the right moment.",
     includes: [
       "CRM setup and pipeline design",
       "Lead follow-up sequences",
@@ -109,9 +109,9 @@ export const SERVICES: Service[] = [
     tagline: "Getting the lead is just the beginning.",
     accent: "peach-gold",
     short:
-      "Email sequences that warm leads up, build trust, and turn interest into action — automatically.",
+      "Email sequences that warm leads up, build trust, and turn interest into action, automatically.",
     description:
-      "Getting the lead is just the beginning. I build the email sequences that warm them up, build trust, and turn interest into action — automatically.",
+      "Getting the lead is just the beginning. I build the email sequences that warm them up, build trust, and turn interest into action, automatically.",
     includes: [
       "Email sequence strategy and copywriting",
       "Lead nurture flows based on subscriber behavior",
@@ -121,7 +121,7 @@ export const SERVICES: Service[] = [
     ],
     steps: [
       { title: "Segment your list", body: "Tag and group subscribers by behavior and intent." },
-      { title: "Write the sequences", body: "Welcome, nurture, sales, win-back — built for your voice." },
+      { title: "Write the sequences", body: "Welcome, nurture, sales, win-back, all built for your voice." },
       { title: "Automate by behavior", body: "Trigger the right message based on what they actually do." },
       { title: "Measure & refine", body: "Watch open, click, and reply rates; iterate on the weak links." },
     ],
@@ -134,7 +134,7 @@ export const PAINS = [
   "You're running ads but the leads aren't converting.",
   "You're spending money on traffic that goes nowhere.",
   "You follow up manually and leads fall through the cracks.",
-  "You don't have a system — you have a to-do list.",
+  "You don't have a system. You have a to-do list.",
 ];
 
 export const METRICS = [
@@ -153,7 +153,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "Godwin was a great support during a very busy season — leading lead generation, email outreach, and key VA tasks that kept me focused on high-priority work. What stood out was his reliability, attention to detail, and ability to take initiative without constant direction. He communicated clearly and got things done efficiently.",
+      "Godwin was a great support during a very busy season, leading lead generation, email outreach, and key VA tasks that kept me focused on high-priority work. What stood out was his reliability, attention to detail, and ability to take initiative without constant direction. He communicated clearly and got things done efficiently.",
     name: "Matt Moran",
     title: "Founder & CEO, Matt Moran Coaching",
   },
@@ -169,7 +169,7 @@ export const EXPERIENCE = [
   {
     role: "Freelance Media Buyer & Automation Specialist",
     company: "Independent",
-    range: "2023 — Present",
+    range: "2023 to Present",
     type: "marketing" as const,
     bullets: [
       "Designed and ran paid acquisition campaigns across Meta and Google for B2B and DTC clients.",
@@ -180,7 +180,7 @@ export const EXPERIENCE = [
   {
     role: "Operations & Workflow Lead",
     company: "[Placeholder Company]",
-    range: "2021 — 2023",
+    range: "2021 to 2023",
     type: "operations" as const,
     bullets: [
       "Standardized internal workflows across sales and ops using Asana and Monday.",
@@ -190,7 +190,7 @@ export const EXPERIENCE = [
   {
     role: "Executive Assistant",
     company: "[Placeholder Company]",
-    range: "2019 — 2021",
+    range: "2019 to 2021",
     type: "operations" as const,
     bullets: [
       "Supported leadership with calendar, communications, and process design.",
@@ -198,7 +198,7 @@ export const EXPERIENCE = [
     ],
   },
   {
-    role: "Data Analytics — Self-directed certification",
+    role: "Data Analytics: Self-directed certification",
     company: "Python / SQL track",
     range: "2022",
     type: "technical" as const,
@@ -212,7 +212,7 @@ export const EXPERIENCE = [
 export const CERTIFICATIONS = [
   "Asana Automation and Workflow Certification",
   "Data Analytics with Python Certification",
-  "[Placeholder] — additional certification",
+  "[Placeholder]: additional certification",
 ];
 
 export const SKILLS = {

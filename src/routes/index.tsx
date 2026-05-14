@@ -10,17 +10,17 @@ import { METRICS, PAINS, SERVICES, TESTIMONIALS } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Godwin Idiovo — Traffic, Funnels & Automation Built Into One Engine" },
+      { title: "Godwin Idiovo | Traffic, Funnels & Automation Built Into One Engine" },
       {
         name: "description",
         content:
           "I get you traffic, build the path, and make sure no lead is ever lost. Full-stack growth execution for businesses ready to scale without chaos.",
       },
-      { property: "og:title", content: "Godwin Idiovo — Growth Systems Built to Scale" },
+      { property: "og:title", content: "Godwin Idiovo | Growth Systems Built to Scale" },
       {
         property: "og:description",
         content:
-          "Media buying, conversion funnels, and backend automation — connected into one engine.",
+          "Media buying, conversion funnels, and backend automation, connected into one engine.",
       },
     ],
   }),
@@ -111,7 +111,7 @@ function WhatIDo() {
   const lines = [
     "I get high-quality traffic to the front door.",
     "I build the digital path that turns a stranger into a lead.",
-    "I build the brain that follows up instantly — so no revenue is ever lost.",
+    "I build the brain that follows up instantly, so no revenue is ever lost.",
   ];
   return (
     <section className="relative bg-primary-deep text-primary-foreground py-24 md:py-32 overflow-hidden">
@@ -181,7 +181,7 @@ function Aha() {
             It's not about getting more traffic.
           </h2>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            It's about building a system that captures, converts, and closes —
+            It's about building a system that captures, converts, and closes
             <span className="text-foreground font-semibold"> automatically.</span>
           </p>
           <div className="h-px w-24 mx-auto bg-gold mt-10" />
@@ -258,12 +258,12 @@ function About() {
         <FadeUp delay={0.1}>
           <span className="label-eyebrow text-primary">About</span>
           <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold leading-tight">
-            I don't just run campaigns — I build engines.
+            I don't just run campaigns. I build engines.
           </h2>
           <div className="mt-5 space-y-4 text-muted-foreground text-lg">
             <p>
               My journey didn't start with algorithms or ad spend; it started in the trenches.
-              As a former Executive Assistant, I lived the reality of manual chaos — the missed
+              As a former Executive Assistant, I lived the reality of manual chaos: the missed
               leads, the messy spreadsheets, and the burnout that comes from trying to scale a
               business with manual labor. I didn't just see the "pain" of inefficient operations;
               I felt it.
@@ -282,7 +282,7 @@ function About() {
             <p>
               By connecting your traffic, your funnel, and your automation into one unified
               machine, I ensure that your technology finally works as hard as you do. I'm not
-              here to just "manage" your business — I'm here to help you engineer its growth.
+              here to just "manage" your business. I'm here to help you engineer its growth.
             </p>
           </div>
           <Link
@@ -370,7 +370,7 @@ function ClosingCTA() {
             Ready to stop leaking revenue?
           </h2>
           <p className="mt-5 text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Let's build your traffic, funnel, and automation system — together.
+            Let's build your traffic, funnel, and automation system, together.
           </p>
           <Link
             to="/contact"

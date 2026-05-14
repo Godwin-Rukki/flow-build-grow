@@ -12,7 +12,7 @@ export function Footer() {
             <span className="font-display text-lg font-bold">{SITE.name}</span>
           </Link>
           <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-            Traffic, funnel, and automation — built into one engine.
+            Traffic, funnel, and automation, built into one engine.
           </p>
         </div>
 
