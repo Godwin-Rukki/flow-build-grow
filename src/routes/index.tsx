@@ -10,17 +10,17 @@ import { METRICS, PAINS, SERVICES, TESTIMONIALS } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Godwin Idiovo — Traffic, Funnels & Automation Built Into One Engine" },
+      { title: "Godwin Idiovo | Traffic, Funnels & Automation Built Into One Engine" },
       {
         name: "description",
         content:
           "I get you traffic, build the path, and make sure no lead is ever lost. Full-stack growth execution for businesses ready to scale without chaos.",
       },
-      { property: "og:title", content: "Godwin Idiovo — Growth Systems Built to Scale" },
+      { property: "og:title", content: "Godwin Idiovo | Growth Systems Built to Scale" },
       {
         property: "og:description",
         content:
-          "Media buying, conversion funnels, and backend automation — connected into one engine.",
+          "Media buying, conversion funnels, and backend automation | connected into one engine.",
       },
     ],
   }),

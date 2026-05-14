@@ -8,16 +8,16 @@ import { CERTIFICATIONS, EXPERIENCE, SITE, SKILLS } from "@/data/site";
 export const Route = createFileRoute("/resume")({
   head: () => ({
     meta: [
-      { title: "Resume — Godwin Idiovo" },
+      { title: "Resume | Godwin Idiovo" },
       {
         name: "description",
         content:
-          "From operations to automation — Godwin's journey through marketing, ops, and technical work.",
+          "From operations to automation | Godwin's journey through marketing, ops, and technical work.",
       },
-      { property: "og:title", content: "My Journey — Godwin Idiovo" },
+      { property: "og:title", content: "My Journey | Godwin Idiovo" },
       {
         property: "og:description",
-        content: "From operations to automation — here's how I got here.",
+        content: "From operations to automation | here's how I got here.",
       },
     ],
   }),
