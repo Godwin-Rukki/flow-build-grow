@@ -6,6 +6,7 @@ import { SectionDecor } from "@/components/effects/SectionDecor";
 import { Counter } from "@/components/effects/Counter";
 import { motion } from "framer-motion";
 import { METRICS, PAINS, SERVICES, TESTIMONIALS } from "@/data/site";
+import godwinPortrait from "@/assets/godwin-portrait.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -247,8 +248,12 @@ function About() {
       <SectionDecor variant="grid-dots" />
       <div className="relative mx-auto max-w-6xl px-6 grid gap-12 md:grid-cols-[260px,1fr] items-start">
         <FadeUp>
-          <div className="relative w-56 h-56 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-card-border bg-primary-surface flex items-center justify-center">
-            <span className="font-display text-6xl text-primary">G</span>
+          <div className="relative w-56 h-56 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-card-border bg-primary-surface">
+            <img
+              src={godwinPortrait}
+              alt="Godwin Idiovo portrait"
+              className="h-full w-full object-cover"
+            />
             <div className="absolute -bottom-2 -right-2 h-10 w-10 rounded-full bg-peach flex items-center justify-center">
               <Sparkles size={16} className="text-peach-foreground" />
             </div>
