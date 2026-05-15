@@ -136,6 +136,50 @@ function ServiceDetail() {
         </div>
       </section>
 
+      {/* Case study */}
+      <section className="relative overflow-hidden bg-background py-20 md:py-24 border-t border-card-border">
+        <div className="relative mx-auto max-w-5xl px-6">
+          <FadeUp>
+            <span className={`label-eyebrow ${a.color}`}>Case study</span>
+            <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">Proof of work.</h2>
+            <p className="mt-3 text-muted-foreground max-w-2xl">
+              A real example of this system in action.
+            </p>
+          </FadeUp>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <FadeUp delay={0.05}>
+              <div className={`aspect-[4/3] rounded-2xl ${a.bg} border ${a.border} flex items-center justify-center overflow-hidden`}>
+                <span className="text-sm text-foreground/50">Image placeholder 1</span>
+              </div>
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <div className={`aspect-[4/3] rounded-2xl ${a.bg} border ${a.border} flex items-center justify-center overflow-hidden`}>
+                <span className="text-sm text-foreground/50">Image placeholder 2</span>
+              </div>
+            </FadeUp>
+          </div>
+
+          <FadeUp delay={0.15}>
+            <div className="mt-8 rounded-2xl bg-card border border-card-border p-8 md:p-10">
+              <span className="label-eyebrow text-muted-foreground">The story</span>
+              <h3 className="mt-3 font-display text-xl md:text-2xl font-semibold">
+                Case study title placeholder
+              </h3>
+              <p className="mt-4 text-foreground/80 leading-relaxed">
+                Case study text placeholder. Drop in the context, the challenge, what you built,
+                and the outcome here. A few short paragraphs work best, with concrete numbers
+                where you have them.
+              </p>
+              <p className="mt-4 text-foreground/80 leading-relaxed">
+                Add a second paragraph with the result, what changed, and what the client walked
+                away with. Replace this whenever you're ready.
+              </p>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
       {/* Proof */}
       <section className="bg-background pb-20 md:pb-24">
         <div className="mx-auto max-w-3xl px-6">
