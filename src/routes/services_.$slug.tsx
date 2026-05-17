@@ -300,7 +300,27 @@ function ServiceDetail() {
                         {cs.overview}
                       </p>
 
-                      <h4 className={`mt-5 font-display text-sm font-bold ${a.color}`}>What I did</h4>
+                      {cs.problem && (
+                        <>
+                          <h4 className={`mt-5 font-display text-sm font-bold ${a.color}`}>The problem</h4>
+                          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{cs.problem}</p>
+                          {cs.problemPoints && (
+                            <ul className="mt-2 space-y-1.5">
+                              {cs.problemPoints.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-foreground/80">
+                                  <Check size={14} className={`mt-1 shrink-0 ${a.color}`} />
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </>
+                      )}
+
+                      <h4 className={`mt-5 font-display text-sm font-bold ${a.color}`}>What I built</h4>
+                      {cs.didIntro && (
+                        <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{cs.didIntro}</p>
+                      )}
                       <ul className="mt-2 space-y-1.5">
                         {cs.did.map((item, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm text-foreground/80">
