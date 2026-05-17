@@ -66,6 +66,73 @@ const CASE_STUDIES: Partial<Record<ServiceSlug, CaseStudy[]>> = {
       imageAlt: "Lead generation campaign dashboard showing 7,287 website leads",
     },
   ],
+  "backend-automation": [
+    {
+      title: "Volunteer Recruitment Automation System",
+      overview:
+        "Designed and implemented a multi-step recruitment automation system for a nonprofit organization to streamline volunteer onboarding, screening, and communication workflows. The system automated the recruitment journey from form submission to candidate assessment and email communication, reducing manual administrative workload and improving response consistency.",
+      problem:
+        "The organization handled multiple volunteer roles and applications manually, making it difficult to:",
+      problemPoints: [
+        "Respond to applicants quickly",
+        "Sort candidates by role",
+        "Track assessments and responses",
+        "Maintain consistent communication throughout recruitment",
+      ],
+      didIntro: "Using workflow automation tools, I created a recruitment system that:",
+      did: [
+        "Captured applications through online forms",
+        "Automatically sorted applicants by role and category",
+        "Triggered personalized email responses",
+        "Distributed assessments and tests based on position",
+        "Reviewed and routed responses through conditional paths",
+        "Sent follow-up communications automatically",
+        "Reduced repetitive manual coordination tasks",
+      ],
+      results: [
+        "Streamlined the entire volunteer recruitment workflow",
+        "Improved applicant response time",
+        "Reduced administrative workload",
+        "Created a scalable onboarding process for multiple volunteer positions",
+        "Enabled continuous recruitment without manual intervention",
+      ],
+      tools: ["Zapier", "Google Forms", "Gmail Automation", "Conditional Logic & Multi-Path Workflows"],
+      image: caseAutomationVolunteer,
+      imageAlt: "Zapier volunteer recruitment automation workflow with multi-path conditional logic",
+    },
+    {
+      title: "Customer Inquiry & Lead Routing Automation for Fitness Business",
+      overview:
+        "Built an automated inquiry management and lead routing system for a fitness business using GoHighLevel to improve customer response times, streamline communication, and automate internal notifications.",
+      problem:
+        "The business handled multiple customer inquiry types manually, which slowed response times and created operational inefficiencies in lead management and follow-up coordination.",
+      didIntro: "Developed a workflow automation system connected to the business website that:",
+      did: [
+        "Captured inquiries through website forms",
+        "Sent instant acknowledgment responses to leads",
+        "Routed inquiries based on customer selections",
+        "Triggered internal team notifications",
+        "Organized leads automatically inside the CRM",
+        "Reduced repetitive administrative communication",
+      ],
+      results: [
+        "Faster customer response times",
+        "Improved lead organization and tracking",
+        "Reduced manual inquiry handling",
+        "Streamlined team communication workflows",
+        "Increased operational efficiency",
+      ],
+      tools: [
+        "GoHighLevel (CRM & Workflow Automation)",
+        "Website Forms",
+        "Automated Email Responses",
+        "Lead Routing Logic",
+        "Internal Notification Workflows",
+      ],
+      image: caseAutomationInquiry,
+      imageAlt: "GoHighLevel enquiry filter workflow routing leads through conditional branches",
+    },
+  ],
 };
 
 export const Route = createFileRoute("/services_/$slug")({
