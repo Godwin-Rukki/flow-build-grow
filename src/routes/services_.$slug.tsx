@@ -195,50 +195,78 @@ function ServiceDetail() {
         </div>
       </section>
 
-      {/* Case study */}
-      <section className="relative overflow-hidden bg-background py-20 md:py-24 border-t border-card-border">
-        <div className="relative mx-auto max-w-5xl px-6">
-          <FadeUp>
-            <span className={`label-eyebrow ${a.color}`}>Case study</span>
-            <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">Proof of work.</h2>
-            <p className="mt-3 text-muted-foreground max-w-2xl">
-              A real example of this system in action.
-            </p>
-          </FadeUp>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            <FadeUp delay={0.05}>
-              <div className={`aspect-[4/3] rounded-2xl ${a.bg} border ${a.border} flex items-center justify-center overflow-hidden`}>
-                <span className="text-sm text-foreground/50">Image placeholder 1</span>
-              </div>
-            </FadeUp>
-            <FadeUp delay={0.1}>
-              <div className={`aspect-[4/3] rounded-2xl ${a.bg} border ${a.border} flex items-center justify-center overflow-hidden`}>
-                <span className="text-sm text-foreground/50">Image placeholder 2</span>
-              </div>
-            </FadeUp>
-          </div>
-
-          <FadeUp delay={0.15}>
-            <div className="mt-8 rounded-2xl bg-card border border-card-border p-8 md:p-10">
-              <span className="label-eyebrow text-muted-foreground">The story</span>
-              <h3 className="mt-3 font-display text-xl md:text-2xl font-semibold">
-                Case study title placeholder
-              </h3>
-              <p className="mt-4 text-foreground/80 leading-relaxed">
-                Case study text placeholder. Drop in the context, the challenge, what you built,
-                and the outcome here. A few short paragraphs work best, with concrete numbers
-                where you have them.
+      {/* Case studies */}
+      {CASE_STUDIES[service.slug] && (
+        <section className="relative overflow-hidden bg-background py-20 md:py-24 border-t border-card-border">
+          <div className="relative mx-auto max-w-5xl px-6">
+            <FadeUp>
+              <span className={`label-eyebrow ${a.color}`}>Case studies</span>
+              <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">Proof of work.</h2>
+              <p className="mt-3 text-muted-foreground max-w-2xl">
+                Real examples of this system in action.
               </p>
-              <p className="mt-4 text-foreground/80 leading-relaxed">
-                Add a second paragraph with the result, what changed, and what the client walked
-                away with. Replace this whenever you're ready.
-              </p>
+            </FadeUp>
+
+            <div className="mt-12 space-y-16">
+              {CASE_STUDIES[service.slug]!.map((cs, idx) => (
+                <FadeUp key={idx} delay={0.05}>
+                  <article className="grid gap-8 md:grid-cols-2 md:items-start">
+                    <div className={`rounded-2xl ${a.bg} border ${a.border} overflow-hidden`}>
+                      <img
+                        src={cs.image}
+                        alt={cs.imageAlt}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="rounded-2xl bg-card border border-card-border p-7 md:p-8">
+                      <span className="label-eyebrow text-muted-foreground">Case 0{idx + 1}</span>
+                      <h3 className="mt-2 font-display text-xl md:text-2xl font-semibold">
+                        {cs.title}
+                      </h3>
+                      <p className="mt-4 text-foreground/80 leading-relaxed text-sm">
+                        {cs.overview}
+                      </p>
+
+                      <h4 className={`mt-5 font-display text-sm font-bold ${a.color}`}>What I did</h4>
+                      <ul className="mt-2 space-y-1.5">
+                        {cs.did.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2 text-sm text-foreground/80">
+                            <Check size={14} className={`mt-1 shrink-0 ${a.color}`} />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <h4 className={`mt-5 font-display text-sm font-bold ${a.color}`}>Results</h4>
+                      <ul className="mt-2 space-y-1.5">
+                        {cs.results.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2 text-sm text-foreground/80">
+                            <Check size={14} className={`mt-1 shrink-0 ${a.color}`} />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <h4 className={`mt-5 font-display text-sm font-bold ${a.color}`}>Tools used</h4>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {cs.tools.map((t) => (
+                          <span
+                            key={t}
+                            className={`inline-flex items-center rounded-full border ${a.border} ${a.bg} px-3 py-1 text-xs font-medium`}
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </article>
+                </FadeUp>
+              ))}
             </div>
-          </FadeUp>
-        </div>
-      </section>
-
+          </div>
+        </section>
+      )}
       {/* Proof */}
       <section className="bg-background pb-20 md:pb-24">
         <div className="mx-auto max-w-3xl px-6">
