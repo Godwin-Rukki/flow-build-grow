@@ -5,11 +5,16 @@ import { SectionDecor } from "@/components/effects/SectionDecor";
 import { SERVICES, type Service, type ServiceSlug } from "@/data/site";
 import caseMediaBuying1 from "@/assets/case-media-buying-1.png";
 import caseMediaBuying2 from "@/assets/case-media-buying-2.png";
+import caseAutomationVolunteer from "@/assets/case-automation-volunteer.png";
+import caseAutomationInquiry from "@/assets/case-automation-inquiry.png";
 
 type CaseStudy = {
   title: string;
   overview: string;
+  problem?: string;
+  problemPoints?: string[];
   did: string[];
+  didIntro?: string;
   results: string[];
   tools: string[];
   image: string;
