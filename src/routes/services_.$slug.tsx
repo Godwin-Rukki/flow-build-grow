@@ -3,6 +3,65 @@ import { ArrowLeft, ArrowRight, Check, Sparkles } from "lucide-react";
 import { FadeUp } from "@/components/effects/FadeUp";
 import { SectionDecor } from "@/components/effects/SectionDecor";
 import { SERVICES, type Service, type ServiceSlug } from "@/data/site";
+import caseMediaBuying1 from "@/assets/case-media-buying-1.png";
+import caseMediaBuying2 from "@/assets/case-media-buying-2.png";
+
+type CaseStudy = {
+  title: string;
+  overview: string;
+  did: string[];
+  results: string[];
+  tools: string[];
+  image: string;
+  imageAlt: string;
+};
+
+const CASE_STUDIES: Partial<Record<ServiceSlug, CaseStudy[]>> = {
+  "media-buying": [
+    {
+      title: "Outbound Call Campaign Performance Tracking",
+      overview:
+        "Supported the monitoring and optimization of an outbound campaign designed to improve customer outreach efficiency and reduce call costs through consistent performance tracking and reporting.",
+      did: [
+        "Monitored daily outbound call performance",
+        "Tracked cost-per-call efficiency metrics",
+        "Assisted with campaign pacing and reporting",
+        "Reviewed activity trends and engagement performance",
+        "Maintained organized campaign analytics for decision-making",
+      ],
+      results: [
+        "Facilitated 1,309 outbound calls",
+        "Achieved an average cost of $0.10 per call",
+        "Managed campaign spend of $132.65",
+        "Maintained steady campaign activity across the reporting period",
+      ],
+      tools: ["Meta Ads Manager", "Campaign Analytics", "Reporting Dashboards", "Performance Tracking"],
+      image: caseMediaBuying1,
+      imageAlt: "Outbound call campaign performance dashboard showing 1,309 calls placed",
+    },
+    {
+      title: "Scaling Lead Generation Through Paid Ads",
+      overview:
+        "Managed and optimized a lead generation campaign focused on increasing website conversions while maintaining cost efficiency. The campaign achieved over 7,200 website leads within a 30-day period through ongoing ad optimization, audience refinement, and performance monitoring.",
+      did: [
+        "Monitored daily ad performance and spend allocation",
+        "Optimized campaign delivery and lead acquisition costs",
+        "Reviewed lead quality and conversion trends",
+        "Tracked analytics and performance metrics",
+        "Assisted with campaign reporting and optimization workflows",
+      ],
+      results: [
+        "Generated 7,287 website leads",
+        "Maintained an average Cost Per Lead of $1.52",
+        "Managed over $11,000 in ad spend",
+        "Increased lead volume by 231% compared to the previous period",
+      ],
+      tools: ["Meta Ads Manager", "Performance Analytics", "Campaign Reporting", "Audience Optimization"],
+      image: caseMediaBuying2,
+      imageAlt: "Lead generation campaign dashboard showing 7,287 website leads",
+    },
+  ],
+};
 
 export const Route = createFileRoute("/services_/$slug")({
   loader: ({ params }): { service: Service } => {
