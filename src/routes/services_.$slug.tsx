@@ -263,7 +263,7 @@ const CASE_STUDIES: Partial<Record<ServiceSlug, CaseStudy[]>> = {
     {
       title: "Post-Purchase Email Automation & Retention Workflow",
       overview:
-        "Built an automated post-purchase email sequence using Kartra to improve customer onboarding, engagement, and retention through structured follow-up communication. The workflow automated customer touchpoints after purchase, ensuring a smoother customer experience while reducing manual communication tasks.",
+        "Built an automated post-purchase email sequence using GoHighLevel to improve customer onboarding, engagement, and retention through structured follow-up communication. The workflow automated customer touchpoints after purchase, ensuring a smoother customer experience while reducing manual communication tasks.",
       problem: "The client needed a system that could:",
       problemPoints: [
         "Maintain communication after purchase",
@@ -288,14 +288,14 @@ const CASE_STUDIES: Partial<Record<ServiceSlug, CaseStudy[]>> = {
         "Improved overall customer experience",
       ],
       tools: [
-        "Kartra",
+        "GoHighLevel",
         "Email Sequence Automation",
         "Customer Journey Workflows",
         "Trigger-Based Automation",
         "Email Marketing Systems",
       ],
       image: caseEmail2,
-      imageAlt: "Kartra post-purchase email sequence workflow with timed waits and email steps",
+      imageAlt: "GoHighLevel post-purchase email sequence workflow with timed waits and email steps",
     },
   ],
 };
