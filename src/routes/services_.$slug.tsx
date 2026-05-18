@@ -7,6 +7,8 @@ import caseMediaBuying1 from "@/assets/case-media-buying-1.png";
 import caseMediaBuying2 from "@/assets/case-media-buying-2.png";
 import caseAutomationVolunteer from "@/assets/case-automation-volunteer.png";
 import caseAutomationInquiry from "@/assets/case-automation-inquiry.png";
+import caseFunnel1 from "@/assets/case-funnel-1.png";
+import caseFunnel2 from "@/assets/case-funnel-2.png";
 
 type CaseStudy = {
   title: string;
@@ -131,6 +133,86 @@ const CASE_STUDIES: Partial<Record<ServiceSlug, CaseStudy[]>> = {
       ],
       image: caseAutomationInquiry,
       imageAlt: "GoHighLevel enquiry filter workflow routing leads through conditional branches",
+    },
+  ],
+  "conversion-funnels": [
+    {
+      title: "Business Lead Magnet Funnel & Automation System",
+      overview:
+        "Designed and implemented a complete lead generation funnel centered around the \"Reclaim Your Time, and Grow Your Business\" lead magnet to help convert visitors into qualified leads through automated follow-up and nurture systems. The project included landing page design, lead capture workflow, CRM automation, and email sequence setup to create a streamlined conversion experience from opt-in to engagement.",
+      problem: "The client needed a system that could:",
+      problemPoints: [
+        "Convert website traffic into leads",
+        "Deliver the lead magnet automatically",
+        "Nurture potential clients through email follow-up",
+        "Reduce manual communication tasks",
+        "Create a more organized lead management process",
+      ],
+      didIntro: "I created a conversion-focused funnel system that included:",
+      did: [
+        "A high-converting landing page",
+        "Strategic call-to-action and lead capture setup",
+        "Automated lead delivery workflow",
+        "CRM organization and tagging",
+        "Multi-step email nurture sequence",
+        "Automated follow-up communication",
+      ],
+      results: [
+        "Streamlined the lead capture process",
+        "Improved response and follow-up efficiency",
+        "Reduced manual administrative work",
+        "Created a scalable automated conversion system",
+        "Improved overall customer journey experience",
+      ],
+      tools: [
+        "GoHighLevel",
+        "Funnel & Landing Page Builder",
+        "CRM Automation",
+        "Email Marketing Automation",
+        "Workflow Automations",
+        "Lead Capture Forms",
+      ],
+      image: caseFunnel1,
+      imageAlt: "Reclaim Your Time lead magnet landing page with opt-in form",
+    },
+    {
+      title: "Healthcare Education Funnel & Lead Nurture System",
+      overview:
+        "Built a conversion-focused funnel system for The First-Gen Doctor Blueprint designed to promote and distribute educational content while automating lead capture, follow-up communication, and engagement workflows. The funnel centered around the resource \"3 Mistakes That Will Cost You 6 to 7 Figures Over the Course of Your Career\" and was designed to guide visitors from initial interest into a structured nurture sequence.",
+      problem: "The client needed an automated system that could:",
+      problemPoints: [
+        "Promote the educational resource effectively",
+        "Capture qualified leads",
+        "Deliver content automatically",
+        "Nurture leads through email sequences",
+        "Organize contacts inside a CRM system",
+      ],
+      didIntro: "I designed and implemented:",
+      did: [
+        "A dedicated high-converting landing page",
+        "Lead capture and opt-in forms",
+        "Automated resource delivery workflows",
+        "Multi-step email follow-up sequences",
+        "CRM pipeline organization",
+        "Automated engagement and nurturing processes",
+      ],
+      results: [
+        "Simplified lead generation and follow-up",
+        "Improved customer onboarding experience",
+        "Reduced manual communication processes",
+        "Created a scalable funnel for future campaigns",
+        "Streamlined audience engagement workflows",
+      ],
+      tools: [
+        "GoHighLevel",
+        "Funnel Builder",
+        "CRM & Workflow Automation",
+        "Email Sequences",
+        "Lead Capture Automation",
+        "Conversion-Focused Landing Pages",
+      ],
+      image: caseFunnel2,
+      imageAlt: "First-Gen Doctor Blueprint landing page with download CTA",
     },
   ],
 };
