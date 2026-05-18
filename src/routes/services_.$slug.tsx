@@ -9,6 +9,8 @@ import caseAutomationVolunteer from "@/assets/case-automation-volunteer.png";
 import caseAutomationInquiry from "@/assets/case-automation-inquiry.png";
 import caseFunnel1 from "@/assets/case-funnel-1.png";
 import caseFunnel2 from "@/assets/case-funnel-2.png";
+import caseEmail1 from "@/assets/case-email-1.png";
+import caseEmail2 from "@/assets/case-email-2.png";
 
 type CaseStudy = {
   title: string;
@@ -213,6 +215,87 @@ const CASE_STUDIES: Partial<Record<ServiceSlug, CaseStudy[]>> = {
       ],
       image: caseFunnel2,
       imageAlt: "First-Gen Doctor Blueprint landing page with download CTA",
+    },
+  ],
+  "email-marketing": [
+    {
+      title: "Lead Nurture & CRM Conversion Automation",
+      overview:
+        "Designed and implemented a multi-stage lead nurture system using GoHighLevel to automate lead engagement, follow-up communication, and conversion tracking across both short-term and long-term nurture pipelines. The workflow was created to improve response consistency, increase engagement, and reduce manual lead management through automated conversational sequences and conditional logic.",
+      problem: "The business needed a system that could:",
+      problemPoints: [
+        "Respond to new leads immediately",
+        "Maintain engagement across multiple touchpoints",
+        "Segment contacts based on behavior and responses",
+        "Reduce lead drop-off",
+        "Automate follow-up communication at scale",
+      ],
+      didIntro: "I developed a complete nurture workflow system that included:",
+      did: [
+        "Short-term lead nurture automation",
+        "Long-term nurture workflow integration",
+        "Conversational email and SMS sequences",
+        "Conditional branching based on lead behavior",
+        "Automated lead stage updates",
+        "Contact tagging and segmentation",
+        "Call reminders and voicemail follow-ups",
+        "Engagement-based workflow triggers",
+      ],
+      results: [
+        "Improved lead response consistency",
+        "Reduced manual follow-up workload",
+        "Created a scalable lead management system",
+        "Increased operational efficiency",
+        "Improved customer journey automation",
+      ],
+      tools: [
+        "GoHighLevel",
+        "CRM Workflow Automation",
+        "Email Marketing Automation",
+        "SMS Automation",
+        "Conditional Logic Workflows",
+        "Pipeline & Lead Management",
+        "Contact Segmentation",
+      ],
+      image: caseEmail1,
+      imageAlt: "GoHighLevel multi-step lead nurture workflow with conditional branching for positive and negative replies",
+    },
+    {
+      title: "Post-Purchase Email Automation & Retention Workflow",
+      overview:
+        "Built an automated post-purchase email sequence using Kartra to improve customer onboarding, engagement, and retention through structured follow-up communication. The workflow automated customer touchpoints after purchase, ensuring a smoother customer experience while reducing manual communication tasks.",
+      problem: "The client needed a system that could:",
+      problemPoints: [
+        "Maintain communication after purchase",
+        "Improve customer onboarding experience",
+        "Deliver follow-up emails automatically",
+        "Keep customers engaged over time",
+        "Reduce repetitive administrative tasks",
+      ],
+      didIntro: "I created an automated post-purchase workflow that:",
+      did: [
+        "Triggered onboarding emails after purchase",
+        "Scheduled timed follow-up sequences",
+        "Automated customer engagement touchpoints",
+        "Structured communication across multiple stages",
+        "Reduced manual customer follow-up processes",
+      ],
+      results: [
+        "Improved customer communication consistency",
+        "Streamlined post-purchase engagement",
+        "Reduced manual email management",
+        "Created a scalable retention workflow",
+        "Improved overall customer experience",
+      ],
+      tools: [
+        "Kartra",
+        "Email Sequence Automation",
+        "Customer Journey Workflows",
+        "Trigger-Based Automation",
+        "Email Marketing Systems",
+      ],
+      image: caseEmail2,
+      imageAlt: "Kartra post-purchase email sequence workflow with timed waits and email steps",
     },
   ],
 };
