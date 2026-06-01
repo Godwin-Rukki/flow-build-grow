@@ -133,33 +133,24 @@ function ResumePage() {
             colorClasses="bg-primary-surface text-primary border-primary/40"
           />
           <PillGroup
-            label="Marketing & Ads"
-            skills={SKILLS.marketing}
+            label="CRM & Operations"
+            skills={SKILLS.operations}
             colorClasses="bg-peach-surface text-peach border-peach/40"
           />
           <PillGroup
-            label="Data & Operations"
-            skills={SKILLS.data}
+            label="Marketing & Growth"
+            skills={SKILLS.marketing}
             colorClasses="bg-gold-surface text-gold border-gold/40"
+          />
+          <PillGroup
+            label="Technical"
+            skills={SKILLS.technical}
+            colorClasses="bg-primary-surface text-primary border-primary/40"
           />
         </div>
       </section>
 
-      {/* Education */}
-      <section className="bg-background pb-24">
-        <div className="mx-auto max-w-4xl px-6">
-          <FadeUp>
-            <span className="label-eyebrow text-muted-foreground">Education</span>
-            <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">Where I learned.</h2>
-            <div className="mt-6 rounded-2xl bg-card border border-card-border p-6">
-              <p className="font-medium">[Placeholder degree or course]</p>
-              <p className="text-sm text-muted-foreground mt-1">
-                Replace with real education content.
-              </p>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
+      {/* Contact CTA */}
     </>
   );
 }

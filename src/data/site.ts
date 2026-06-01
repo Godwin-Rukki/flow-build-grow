@@ -230,13 +230,8 @@ export const CERTIFICATIONS = [
 ];
 
 export const SKILLS = {
-  automation: [
-    "Make.com", "Go High Level", "Clay", "Hunter.io", "n8n", "Microsoft Clarity", "Zapier",
-  ],
-  marketing: [
-    "Meta Ads", "Google Ads", "Apollo.io", "Kit", "Klaviyo", "Thrivecart",
-  ],
-  data: [
-    "Python", "SQL", "Excel", "VS Code", "Shopify", "Asana", "Monday.com", "Google Workspace",
-  ],
+  automation: ["Make.com", "Zapier", "n8n", "GoHighLevel", "Clay", "HubSpot"],
+  operations: ["ClickUp", "Asana", "Airtable", "Notion", "Google Workspace", "Monday.com"],
+  marketing: ["Meta Ads", "Google Ads", "Klaviyo", "Apollo.io", "Ahrefs", "ThriveCart"],
+  technical: ["Python", "SQL", "VS Code", "WordPress", "Shopify"],
 };
