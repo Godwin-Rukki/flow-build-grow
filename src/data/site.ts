@@ -224,9 +224,10 @@ export const EXPERIENCE = [
 ];
 
 export const CERTIFICATIONS = [
-  "Asana Automation and Workflow Certification",
-  "Data Analytics with Python Certification",
-  "[Placeholder]: additional certification",
+  "Google Project Management Certificate — Coursera (2021)",
+  "Programming with Python for Data Science — Udacity (2023)",
+  "Digital Marketing — Hootsuite Academy (2024)",
+  "Asana Workflow Specialist Certification (2025)",
 ];
 
 export const SKILLS = {
