@@ -1,11 +1,11 @@
 export const SITE = {
   name: "Godwin Idiovo",
-  email: "godwin@godwinidiovo.com",
+  email: "hello@godwinidiovo.com",
   domain: "godwinidiovo.com",
   linkedin: "https://www.linkedin.com/in/oghenerukevwegodwinidiovo/",
   calendly: "https://calendly.com/idiovorukky/theguyva",
   formspreeId: "meenwera",
-  cvUrl: "/cv-placeholder.pdf",
+  cvUrl: "https://drive.google.com/file/d/1FkgL5kunM_gl8guEn5AJu1HcEbWe0mim/view?usp=sharing",
 };
 
 export type ServiceSlug =
@@ -224,9 +224,10 @@ export const EXPERIENCE = [
 ];
 
 export const CERTIFICATIONS = [
-  "Asana Automation and Workflow Certification",
-  "Data Analytics with Python Certification",
-  "[Placeholder]: additional certification",
+  "Google Project Management Certificate — Coursera (2021)",
+  "Programming with Python for Data Science — Udacity (2023)",
+  "Digital Marketing — Hootsuite Academy (2024)",
+  "Asana Workflow Specialist Certification (2025)",
 ];
 
 export const SKILLS = {
