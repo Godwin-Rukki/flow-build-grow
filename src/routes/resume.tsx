@@ -46,7 +46,8 @@ function ResumePage() {
             </p>
             <a
               href={SITE.cvUrl}
-              download
+              target="_blank"
+              rel="noreferrer"
               className="mt-7 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.03]"
             >
               <Download size={16} /> Download CV
