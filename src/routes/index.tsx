@@ -132,9 +132,9 @@ function WhatIDo() {
               >
                 0{i + 1}
               </span>
-              <h3 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+              <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight">
                 {l}
-              </h3>
+              </h2>
             </div>
           </FadeUp>
         ))}
