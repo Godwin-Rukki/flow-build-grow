@@ -229,7 +229,7 @@ function ServicesPreview() {
                   <h3 className="mt-5 font-display text-2xl font-bold">{s.title}</h3>
                   <p className="mt-3 text-muted-foreground">{s.tagline}</p>
                   <span className={`mt-6 inline-flex items-center gap-1 text-sm font-medium ${a.color}`}>
-                    Learn more <ArrowRight size={14} />
+                    View service details <ArrowRight size={14} />
                   </span>
                 </Link>
               </FadeUp>
