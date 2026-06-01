@@ -1,11 +1,11 @@
 export const SITE = {
   name: "Godwin Idiovo",
-  email: "godwin@godwinidiovo.com",
+  email: "hello@godwinidiovo.com",
   domain: "godwinidiovo.com",
   linkedin: "https://www.linkedin.com/in/oghenerukevwegodwinidiovo/",
   calendly: "https://calendly.com/idiovorukky/theguyva",
   formspreeId: "meenwera",
-  cvUrl: "/cv-placeholder.pdf",
+  cvUrl: "https://drive.google.com/file/d/1FkgL5kunM_gl8guEn5AJu1HcEbWe0mim/view?usp=sharing",
 };
 
 export type ServiceSlug =
