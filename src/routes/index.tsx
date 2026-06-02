@@ -11,7 +11,7 @@ import godwinPortrait from "@/assets/godwin-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Godwin Idiovo | Traffic, Funnels & Automation Built Into One Engine" },
+      { title: "Godwin Idiovo | Traffic, Funnels & Automation Engine" },
       {
         name: "description",
         content:
