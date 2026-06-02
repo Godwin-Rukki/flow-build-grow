@@ -315,6 +315,28 @@ export const Route = createFileRoute("/services_/$slug")({
           { property: "og:description", content: loaderData.service.short },
         ]
       : [],
+    scripts: loaderData
+      ? [
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: loaderData.service.title,
+              description: loaderData.service.description,
+              serviceType: loaderData.service.title,
+              url: `https://godwinidiovo.com/services/${loaderData.service.slug}`,
+              provider: {
+                "@type": "Person",
+                "@id": "https://godwinidiovo.com/#person",
+                name: "Godwin Idiovo",
+                url: "https://godwinidiovo.com/",
+              },
+              areaServed: "Worldwide",
+            }),
+          },
+        ]
+      : [],
   }),
   component: ServiceDetail,
   notFoundComponent: () => (
