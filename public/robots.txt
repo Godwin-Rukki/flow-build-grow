@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flow-build-grow.lovable.app/sitemap.xml
