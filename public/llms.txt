@@ -1,0 +1,19 @@
+# Godwin Idiovo
+
+> Media buyer, funnel builder, and automation specialist helping businesses scale with traffic, conversion funnels, and backend automation built into one engine.
+
+Godwin Idiovo offers full-stack growth execution: paid media, conversion funnel design, backend automation (CRM, workflows, integrations), and email marketing & lead nurture.
+
+## Pages
+
+- [Home](/): Overview of services, results, and approach.
+- [Services](/services): Full list of growth services offered.
+- [Resume](/resume): Work experience, certifications, and tool stack.
+- [Contact](/contact): Get in touch or book a discovery call.
+
+## Services
+
+- [Media Buying](/services/media-buying): Paid traffic acquisition optimized for ROAS.
+- [Conversion Funnels](/services/conversion-funnels): End-to-end funnel design from click to booked call.
+- [Backend Automation](/services/backend-automation): CRM, workflows, and integrations that run themselves.
+- [Email Marketing & Lead Nurture](/services/email-marketing): Email sequences that warm leads and convert.
