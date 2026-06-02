@@ -101,6 +101,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://godwinidiovo.com/#website",
+              url: "https://godwinidiovo.com/",
+              name: "Godwin Idiovo",
+              description:
+                "Media buying, conversion funnels, and backend automation, built into one engine.",
+              publisher: { "@id": "https://godwinidiovo.com/#person" },
+              inLanguage: "en",
+            },
+            {
+              "@type": "Person",
+              "@id": "https://godwinidiovo.com/#person",
+              name: "Godwin Idiovo",
+              url: "https://godwinidiovo.com/",
+              jobTitle: "Media Buyer, Funnel Builder, Automation Specialist",
+              email: "mailto:hello@godwinidiovo.com",
+              sameAs: ["https://www.linkedin.com/in/oghenerukevwegodwinidiovo/"],
+            },
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
