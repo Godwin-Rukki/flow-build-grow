@@ -91,6 +91,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Godwin Idiovo | Growth Systems Built to Scale" },
+      { name: "description", content: "Godwin's Growth Engine is a multi-page portfolio website showcasing Godwin Idiovo's expertise in media buying, conversion funnels, and backend automation." },
+      { property: "og:description", content: "Godwin's Growth Engine is a multi-page portfolio website showcasing Godwin Idiovo's expertise in media buying, conversion funnels, and backend automation." },
+      { name: "twitter:description", content: "Godwin's Growth Engine is a multi-page portfolio website showcasing Godwin Idiovo's expertise in media buying, conversion funnels, and backend automation." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d1070067-cda7-4ddd-bb5b-ce81ef70c070/id-preview-0d579635--30c38655-f690-455c-8cde-5d15011c8ee5.lovable.app-1780407382976.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d1070067-cda7-4ddd-bb5b-ce81ef70c070/id-preview-0d579635--30c38655-f690-455c-8cde-5d15011c8ee5.lovable.app-1780407382976.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
